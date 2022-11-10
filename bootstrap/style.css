@@ -1,0 +1,15 @@
+.yellow-text {
+    color: rgba(255, 221, 0, 0.712);
+}
+.carousel-item img {
+    margin: auto;
+}
+.pink {
+    background: rgb(241, 152, 167);
+}
+.blue {
+    background: rgba(0, 170, 255, 0.816);
+}
+.green {
+    background: rgba(53, 172, 53, 0.73);
+}
