@@ -1,4 +1,5 @@
 # Web-tekniikat
 EDITS: <br>
 4.11.2022 Lisätty uusi kansio ja luennnon tehtävät <br>
-9.11.2022 Lisätty Dom node ja tyylimuotoilu luennon esimerkit ja tehtävät
+9.11.2022 Lisätty Dom node ja tyylimuotoilu luennon esimerkit ja tehtävät <br>
+10.11.2022 Lisätty .gitignore -tiedosto
