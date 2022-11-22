@@ -12,6 +12,7 @@ button.addEventListener("wheel", Wheel);
 p.addEventListener("click", OkClicked2);
 p.addEventListener("wheel", Wheel);
 form.addEventListener("submit", showUsername);
+document.getElementById("show").addEventListener("click", showAll);
 
 function OkClicked(){
     button.style.width = "100px";
@@ -19,6 +20,15 @@ function OkClicked(){
 }
 function OkClicked2(){
     p.style.width = "500px";
+}
+let users = []; /*  */
+
+function showAll(){
+    for (const user of users) {
+        let h = document.createElement("h3");
+        h.textContent = user;
+        document.body.appendChild(h);
+    }
 }
 
 /**
@@ -29,6 +39,7 @@ function showUsername(event){
     event.preventDefault(); /* poistaa submit-napin refresh ominaisuuden, ja muulta sen default-asetukset */
     let formData = new FormData(form);
     let username = formData.get("username");
+    users.push(username);
     let h = document.createElement("h3");
     h.textContent = username;
     document.body.appendChild(h);
