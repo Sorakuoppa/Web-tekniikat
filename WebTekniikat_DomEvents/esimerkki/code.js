@@ -2,12 +2,16 @@ let button = document.querySelector("button");
 let field = document.querySelector("#username");
 let p = document.querySelector("p");
 let button2 = document.querySelector(".new");
+let form = document.getElementById("lomake");
+/* let formButton = document.getElementById("lomakenappi"); */
 
 button.addEventListener("click", OkClicked);
 button.addEventListener("click", showUsername);
+/* formButton.addEventListener("click", showUsername); */
 button.addEventListener("wheel", Wheel);
 p.addEventListener("click", OkClicked2);
 p.addEventListener("wheel", Wheel);
+form.addEventListener("submit", showUsername);
 
 function OkClicked(){
     button.style.width = "100px";
@@ -17,8 +21,14 @@ function OkClicked2(){
     p.style.width = "500px";
 }
 
-function showUsername(){
-    let username = field.value;
+/**
+ * 
+ * @param {Event} event 
+ */
+function showUsername(event){
+    event.preventDefault(); /* poistaa submit-napin refresh ominaisuuden, ja muulta sen default-asetukset */
+    let formData = new FormData(form);
+    let username = formData.get("username");
     let h = document.createElement("h3");
     h.textContent = username;
     document.body.appendChild(h);
