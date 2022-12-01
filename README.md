@@ -6,3 +6,4 @@ EDITS: <br>
 16.11.2022 Lisätty DOM-events kansio ja siihen liittyvät tehtävät. <br>
 22.11.2022 Lisätty muokatut lista ja haku kansiot. <br>
 23.11.2022 Lisätty Google fontti ja kuvake esimerkki-kansioon. <br>
+1.12.2022 Lisätty kooste-kansio, map- ja filter-funktiot käyty läpi <br>
