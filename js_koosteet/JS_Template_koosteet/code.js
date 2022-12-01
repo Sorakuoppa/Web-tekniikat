@@ -15,6 +15,7 @@ let priceTags = prices.map(num => {
         return num + " kallis";
     } 
 })
+/*Vaihtoehtoinen tapa tehdä ehdolause ylempään kohtaan (tosi:epätosi): prices.map( price => price>200 ? "kallis" : "halpa") */
 console.log(priceTags);
 //4 Tee filter-funktiolla taulu, jossa on vain 300:aa halvemmat hinnat.
 let filteredPrices = prices.filter(num => num < 300);
@@ -27,8 +28,13 @@ console.log(longNames);
 function showAppliances(gadgets){
     //6 Funktion parametrina on taulukko, joka sisältää laitteiden nimiä
     //Tulosta nimistä lista tälle sivulle ul-luettelon sisään.
+    let ul = document.querySelector("ul");
+    for(gadget of gadgets) {
+        let li = document.createElement("li");
+        li.textContent = gadget;
+        ul.appendChild(li);
+    }
 }
-
 
 function getAppliances(){
     fetch("https://random-data-api.com/api/v2/appliances?size=100")
