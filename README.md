@@ -7,4 +7,5 @@ EDITS: <br>
 22.11.2022 Lisätty muokatut lista ja haku kansiot. <br>
 23.11.2022 Lisätty Google fontti ja kuvake esimerkki-kansioon. <br>
 1.12.2022 Lisätty kooste-kansio, map- ja filter-funktiot käyty läpi + array-tyyliset muuttujat <br>
-2.2.2022 Lisätty CSS ja SASS-kansiot <br>
+2.12.2022 Lisätty CSS ja SASS-kansiot <br>
+7.12.2022 Lisätty Lightbox-tehtävä ja tehty tehtävä array-kansiosta <br>
