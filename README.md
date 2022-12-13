@@ -9,3 +9,4 @@ EDITS: <br>
 1.12.2022 Lisätty kooste-kansio, map- ja filter-funktiot käyty läpi + array-tyyliset muuttujat <br>
 2.12.2022 Lisätty CSS ja SASS-kansiot <br>
 7.12.2022 Lisätty Lightbox-tehtävä ja tehty tehtävä array-kansiosta. Liästty myös REST-kansio arrayseen. <br>
+13.12.2022 Lisätty documents-kansio ja lisätty wireframe-tiedostot. <br>
