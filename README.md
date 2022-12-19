@@ -11,4 +11,4 @@ EDITS: <br>
 2.12.2022 Lisätty CSS ja SASS-kansiot <br>
 7.12.2022 Lisätty Lightbox-tehtävä ja tehty tehtävä array-kansiosta. Liästty myös REST-kansio arrayseen. <br>
 13.12.2022 Lisätty documents-kansio ja lisätty wireframe-tiedostot. <br>
-19.12.2022 Lisätty JS-tehtävän kansio. <br>
+19.12.2022 Lisätty JS-tehtävän kansio. Ja Sass work -kansio lisätty. <br>
