@@ -1,0 +1,182 @@
+/* I made variables for colours, because is easier remember name than hexanumber for colour. */
+/* Theme is used for footer and navs border */
+body {
+  margin: 0;
+  font-family: "Livvic", sans-serif;
+  font-size: 1.2em;
+  height: 98vh;
+  background-color: #bad8e2;
+}
+
+#navbar {
+  border: 5px solid #FFC25F;
+  background-color: #1293BE;
+  font-weight: bold;
+}
+#navbar #navbar a:hover {
+  color: #0B485D;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h5 {
+  font-family: "Caveat Brush", cursive;
+  font-size: 2em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #0B485D;
+}
+
+h6 {
+  font-family: "Caveat Brush", cursive;
+  font-size: 1.5em;
+  color: #1293BE;
+}
+
+/* Highlights footers last list item. */
+li ~ li {
+  color: #DA4F00;
+}
+
+a:hover {
+  color: #1293BE;
+}
+
+p, a, footer {
+  font-family: "Livvic", sans-serif;
+  font-size: 1.1em;
+}
+
+.nav-item {
+  padding: 5px;
+}
+
+/* Just normal footer child img structure. */
+footer {
+  display: flex;
+  border: 5px solid #FFC25F;
+  background-color: #1293BE;
+  width: 100%;
+  margin: 0;
+  justify-content: space-between;
+}
+footer img {
+  max-height: 100px;
+  background-color: white;
+}
+
+.team {
+  display: flex;
+  color: black;
+  align-items: flex-end;
+}
+
+li.footer-item {
+  padding: 3px;
+}
+
+/* I didn't know how to force display setting for this class, so I had to use important. */
+.disappear {
+  display: none !important;
+}
+
+button {
+  color: #0B485D;
+  background-color: #1293BE;
+  padding: 15px;
+}
+button :hover {
+  color: #943D0C;
+  background-color: #FFC25F;
+}
+
+/* Highlights star over -button. */
+button + button {
+  background-color: #DA4F00;
+}
+
+/* Changes colours for answer buttons witch are divQuestion -divs children. */
+#divQuestion > [id^=ans] {
+  background-color: #DA4F00;
+  margin: 15px;
+  padding: 10px;
+}
+
+#startButton {
+  position: absolute;
+  top: 500px;
+}
+
+#divQuestion {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 5px solid #0B485D;
+  border-radius: 18px;
+}
+#divQuestion > button:hover {
+  color: #943D0C;
+  background-color: #FFC25F;
+}
+
+#answerBox, #points {
+  margin-top: 10px;
+}
+
+answerP {
+  margin-bottom: 0px;
+}
+
+#points {
+  justify-content: center;
+  display: flex;
+  flex: auto;
+}
+#points p {
+  padding: 0px 5px 0px 5px;
+  font-size: 2em;
+  color: #0B485D;
+}
+
+#mascot {
+  justify-content: center;
+}
+
+#mascotPicture {
+  margin-top: 75px;
+  height: 200px;
+  width: auto;
+}
+
+#headerImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+  .container-fluid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  footer img {
+    display: none;
+  }
+  #content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: fit-content;
+  }
+  #startButton {
+    position: absolute;
+    top: 400px;
+  }
+}
+
+/*# sourceMappingURL=style_new.css.map */

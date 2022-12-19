@@ -1,35 +1,56 @@
-
+/* I made variables for colours, because is easier remember name than hexanumber for colour. */
+$darkblue: #0B485D;
+$lightblue: #1293BE;
+$lightred: #DA4F00;
+$darkred: #943D0C;
+$yellow: #FFC25F;
+/* Theme is used for footer and navs border */
+@mixin theme() {
+    border: 5px solid $yellow;
+    background-color: $lightblue;
+}
 body {
     margin: 0;
     font-family: 'Livvic', sans-serif;
     font-size: 1.2em;
     height: 98vh;
+    background-color: #bad8e2;
 }
 
 #navbar {
-    border: 5px solid #FFC25F;
-    background-color: #1293BE;
+    @include theme;
     font-weight: bold;
+    #navbar a:hover {
+        color: $darkblue;
+    }
 }
 
 .container-fluid {
     display: flex;
     flex-direction: column;
     align-items: center;
-}    
+}
 
-#navbar a:hover {
-    color: #056888;
+h5 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: $darkblue;
 }
 
 h6 {
     font-family: 'Caveat Brush', cursive;
-    font-size: 1.5em;
-    color: #056888;
+    font-size: 1em + 0.5em;
+    color: $lightblue;
+}
+/* Highlights footers last list item. */
+li ~ li {
+    color: $lightred;
 }
 
-li ~ li {
-    color: #DA4F00;
+a:hover {
+    color: $lightblue;
 }
 
 p, a, footer{
@@ -40,15 +61,17 @@ p, a, footer{
 .nav-item {
     padding:5px;
 }
-
-#footer {
+/* Just normal footer child img structure. */
+footer {
     display: flex;
-    background-color: #1293BE;
-    border: 5px solid #FFC25F;
+    @include theme;
     width: 100%;
     margin: 0;
     justify-content: space-between;
-
+    img {
+        max-height: 100px;
+        background-color: white;
+    }
 }
 
 .team {
@@ -60,83 +83,77 @@ p, a, footer{
 li.footer-item {
     padding:3px;
 }
-
-footer img {
-    max-height: 100px;
-    background-color: white;
-}
-
+/* I didn't know how to force display setting for this class, so I had to use important. */
 .disappear  {
     display: none !important;
 }
-body {
-    background-color: #bad8e2;
-}
+
 button {
-    color: #0B485D;
-    background-color: #1293BE;
+    color: $darkblue;
+    background-color: $lightblue;
     padding: 15px;
+    :hover {
+        color: $darkred;
+        background-color: $yellow;
+    }
 }
+/* Highlights star over -button. */
 button + button {
-    background-color: #DA4F00;
+    background-color: $lightred;
 }
+/* Changes colours for answer buttons witch are divQuestion -divs children. */
 #divQuestion > [id^=ans] {
-    background-color: #DA4F00;
+    background-color: $lightred;
     margin: 15px;
     padding: 10px;
 }
+
 #startButton {
     position: absolute;
     top: 500px;
 }
-button:hover {
-    color: #943D0C;
-    background-color: #FFC25F;
-}
-#divQuestion>button:hover {
-    color: #943D0C;
-    background-color: #FFC25F;
-} 
 
 #divQuestion{
     display: flex;
     flex-direction: column;
     background-color: white;
-    border: 5px solid #0B485D;
+    border: 5px solid $darkblue;
     border-radius: 18px;
+    > button:hover {
+        color: $darkred;
+        background-color: $yellow;
+    }
 }
 
 #answerBox, #points {
     margin-top: 10px;
 }
+
 answerP {
     margin-bottom: 0px;
 }
+
 #points {
     justify-content: center;
     display: flex;
     flex: auto;
+    p {
+        padding: 0px 5px 0px 5px;
+        font-size: 2em;
+        color: $darkblue;
+    }
 }
-#points p {
-    padding: 0px 5px 0px 5px;
-    font-size: 2em;
-    color: #0B485D;
-}
-h5 {
-    font-family: 'Caveat Brush', cursive;
-    font-size: 2em;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    color: #0B485D;
-}
+
 #mascot {
     justify-content: center;
 }
+
 #mascotPicture {
     margin-top: 75px;
     height: 200px;
     width: auto;
 }
+
 #headerImage {
     display: block;
     margin-left: auto;
@@ -144,7 +161,7 @@ h5 {
     width: 100%;
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 990px){
 
 .container-fluid {
     display: flex;
