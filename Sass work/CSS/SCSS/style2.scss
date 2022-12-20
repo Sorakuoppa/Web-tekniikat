@@ -1,0 +1,57 @@
+/* I made variables for colours, because is easier remember name than hexanumber for colour. */
+$darkblue: #0B485D;
+$lightblue: #1293BE;
+$lightred: #DA4F00;
+$darkred: #943D0C;
+$yellow: #FFC25F;
+/* Theme is used for footer and navs border */
+@mixin theme() {
+    border: 5px solid $yellow;
+    background-color: $lightblue;
+}
+@mixin theme2() {
+    color: $darkblue;
+    background-color: $lightblue;
+}
+body {
+    margin: 0;
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.2em;
+    height: 98vh;
+    background-color: #bad8e2;
+}
+.navbar {
+    @include theme;
+    font-weight: bold;
+    #navbar a:hover {
+        color: $darkblue;
+    }
+}
+footer {
+    display: flex;
+    @include theme;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+}
+button > a {
+    @include theme2;
+    text-decoration: none;
+    :hover {
+        color: $lightblue;
+    }
+}
+.btn-outline-success {
+    @include theme2;
+    --bs-btn-hover-bg: #0B485D;
+}
+.card {
+    margin: 15px;
+    > img {
+        max-height: 250px;
+        object-fit: contain;
+    }
+}

@@ -1,0 +1,56 @@
+/* I made variables for colours, because is easier remember name than hexanumber for colour. */
+/* Theme is used for footer and navs border */
+body {
+  margin: 0;
+  font-family: "Livvic", sans-serif;
+  font-size: 1.2em;
+  height: 98vh;
+  background-color: #bad8e2;
+}
+
+.navbar {
+  border: 5px solid #FFC25F;
+  background-color: #1293BE;
+  font-weight: bold;
+}
+.navbar #navbar a:hover {
+  color: #0B485D;
+}
+
+footer {
+  display: flex;
+  border: 5px solid #FFC25F;
+  background-color: #1293BE;
+  width: 100%;
+  margin: 0;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+button > a {
+  color: #0B485D;
+  background-color: #1293BE;
+  text-decoration: none;
+}
+button > a :hover {
+  color: #1293BE;
+}
+
+.btn-outline-success {
+  color: #0B485D;
+  background-color: #1293BE;
+  --bs-btn-hover-bg: #0B485D;
+}
+
+.card {
+  margin: 15px;
+}
+.card > img {
+  max-height: 250px;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=style2_new.css.map */
