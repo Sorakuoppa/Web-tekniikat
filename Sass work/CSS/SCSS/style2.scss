@@ -20,19 +20,29 @@ body {
     height: 98vh;
     background-color: #bad8e2;
 }
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
 .navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0;
+    background-color: $lightblue;
+    form {
     @include theme;
     font-weight: bold;
-    #navbar a:hover {
-        color: $darkblue;
+    background-color: $lightblue;
+    } button {
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }
 footer {
-    display: flex;
     @include theme;
     width: 100%;
-    margin: 0;
-    justify-content: space-between;
+    margin-top: none;
 }
 a {
     text-decoration: none;
@@ -50,8 +60,13 @@ button > a {
 }
 .card {
     margin: 15px;
+    border: 5px solid $yellow;
+    border-radius: 5px;
     > img {
         max-height: 250px;
         object-fit: contain;
     }
+}
+#sammakke {
+    max-width: 80vw;
 }

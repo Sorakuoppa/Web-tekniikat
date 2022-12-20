@@ -8,22 +8,34 @@ body {
   background-color: #bad8e2;
 }
 
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 .navbar {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0;
+  background-color: #1293BE;
+}
+.navbar form {
   border: 5px solid #FFC25F;
   background-color: #1293BE;
   font-weight: bold;
+  background-color: #1293BE;
 }
-.navbar #navbar a:hover {
-  color: #0B485D;
+.navbar button {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 footer {
-  display: flex;
   border: 5px solid #FFC25F;
   background-color: #1293BE;
   width: 100%;
-  margin: 0;
-  justify-content: space-between;
+  margin-top: none;
 }
 
 a {
@@ -47,10 +59,16 @@ button > a :hover {
 
 .card {
   margin: 15px;
+  border: 5px solid #FFC25F;
+  border-radius: 5px;
 }
 .card > img {
   max-height: 250px;
   object-fit: contain;
+}
+
+#sammakke {
+  max-width: 80vw;
 }
 
 /*# sourceMappingURL=style2_new.css.map */
